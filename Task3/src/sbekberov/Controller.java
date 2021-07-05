@@ -75,9 +75,11 @@ public class Controller {
     public boolean processUser(String input, int question) {
         switch (question) {
             case 0:
+                return input.matches("^[A-ZA-Я]?[a-zа-я]+");
             case 1:
+                return input.matches("^[A-ZA-Я]?[a-zа-я]+");
             case 2:
-                return input.matches("^[А-ЯA-Z][a-яa-z]+$");
+                return input.matches("^[A-ZA-Я]?[a-zа-я]+");
             case 3:
                 return input.matches("^(\\+?[1-9])[0-9]{9,12}");
             case 4:
